@@ -1,50 +1,66 @@
-# Welcome to your Expo app 👋
+# 📱 Welcome to Study Abroad Programs App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple React Native mobile app built with Expo that displays a list of study abroad programs. Users can view details about each program by tapping on the list items..
 
-## Get started
+# 🎯 Objective
 
-1. Install dependencies
+Show a list of universities/programs with name, country, and description.
+Navigate to a details screen with full information.
+Use responsive layouts and reusable components.
 
-   ```bash
-   npm install
-   ```
+# 🛠 Tech Stack
 
-2. Start the app
+.React Native with Expo
+.Expo Router for navigation
+.FlatList for rendering lists
+.Reusable components for clean structure
 
-   ```bash
-   npx expo start
-   ```
+# 📂 Project Structure
 
-In the output, you'll find options to open the app in a
+Code
+StudyAbroadApp/
+├── app/
+│ ├── \_layout.tsx # Navigation setup
+│ ├── Home.tsx # Home screen (list of programs)
+│ └── Details.tsx # Details screen
+├── components/
+│ └── ProgramCard.tsx # Reusable card component
+├── data/
+│ └── universities.json # Static JSON data
+├── assets/Screenshots # Screenshots(Home and Details Screens)
+├── package.json
+└── README.md
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+# 🚀 Setup Instructions
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Clone the repository:
 
-## Get a fresh project
+bash
+git clone <your-repo-link>
+cd StudyAbroadApp
 
-When you're ready, run:
+Install dependencies:
 
-```bash
-npm run reset-project
-```
+bash
+npm install
+Start the project:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+bash
+npm run start
 
-## Learn more
+Open the app:
 
-To learn more about developing your project with Expo, look at the following resources:
+Scan the QR code with Expo Go on your phone.
+Or run on an emulator (Android Studio / Xcode).
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# 📖 Features
 
-## Join the community
+.Home screen with a list of universities.
+.Details screen showing full program info.
+.Responsive UI tested on multiple devices.
+.Clean and reusable component structure.
 
-Join our community of developers creating universal apps.
+# 📸 Screenshots
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Home Screen (./assets/Screenshots/HomeScreen.jpeg)
+Details Screen (./assets/Screenshots/DetailsScreen.jpeg)
